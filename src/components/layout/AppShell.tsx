@@ -18,6 +18,7 @@ import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ChatSidebar } from '@/components/chat/ChatSidebar';
 import { useIsMobile } from '@/hooks/use-mobile';
+import logo from '@/assets/logo.png'; // Assuming you have a logo in your assets
 // Removed FeedbackButton import as it's now integrated into ChatInput
 
 // Primary navigation items for the AppShell sidebar (non-chat view)
@@ -29,7 +30,7 @@ const appShellSecondaryNavItems = [
    { href: '/settings', label: 'Settings', icon: Settings },
 ];
 
-const NEW_LOGO_URL = "https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac";
+// const NEW_LOGO_URL = "https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac";
 
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -198,7 +199,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
          <div className={cn("flex items-center border-b border-sidebar-border pb-2 mb-1", currentIsCollapsed ? "justify-center h-[50px]" : "justify-start h-[50px] px-1")}>
             {!currentIsCollapsed && (
                 <Link href="/dashboard" className="flex items-center gap-2 shrink-0" onClick={() => isMobileSheet && setMobileMenuOpen(false)}>
-                 <Image src={NEW_LOGO_URL} alt="C3L1KD GPT Logo" width={28} height={28} className="rounded-sm" data-ai-hint="app logo"/>
+                 <Image src={logo} alt="C3L1KD GPT Logo" width={28} height={28} className="rounded-sm" data-ai-hint="app logo"/>
                  <h1 className="text-lg font-semibold text-foreground">C3L1KD GPT</h1>
                 </Link>
             )}
