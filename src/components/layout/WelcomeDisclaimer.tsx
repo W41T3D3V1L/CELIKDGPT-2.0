@@ -8,7 +8,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { AlertTriangle, ExternalLink } from 'lucide-react';
-
+import logo from '@/assets/logo.png'; // Assuming you have a logo in your assets
 interface WelcomeDisclaimerProps {
   onAccept: () => void;
   logoUrl: string;
@@ -26,7 +26,7 @@ export function WelcomeDisclaimer({ onAccept, logoUrl }: WelcomeDisclaimerProps)
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-background">
       <Card className="w-full max-w-lg shadow-xl bg-card border-border/50 max-h-[calc(100vh-10rem)] flex flex-col">
         <CardHeader className="text-center items-center flex-shrink-0">
-          <Image src={logoUrl} alt="C3L1KD GPT Logo" width={48} height={48} className="rounded-sm mb-4" data-ai-hint="app logo"/>
+          <Image src={logo} alt="C3L1KD GPT Logo" width={48} height={48} className="rounded-sm mb-4" data-ai-hint="app logo"/>
           <CardTitle className="text-2xl font-semibold text-foreground">Welcome to C3L1KD GPT (Beta)</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6 pt-2 flex-grow overflow-y-auto">
