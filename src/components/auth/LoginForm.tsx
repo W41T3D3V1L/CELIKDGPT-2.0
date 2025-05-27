@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Label } from '@/components/ui/label';
 import { LogIn, Loader2, Zap } from 'lucide-react'; // Using Zap or similar for "Explore GPT"
 import Image from 'next/image'; // Added for new logo
-import {LOGO} from '@/api/logo.png'; // Assuming you have a logo in your assets
+import logo from '@/assets/logo.png'; // Assuming you have a logo in your assets
 
 // const NEW_LOGO_URL = "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-4864-622f-9b61-363bd6aa19f2/raw?se=2025-05-27T19%3A33%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=933b069e-9eb7-51a2-a3f5-07f5178e48c0&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-27T06%3A16%3A10Z&ske=2025-05-28T06%3A16%3A10Z&sks=b&skv=2024-08-04&sig=RUnGrX7/AzVWvsviW6Ek%2BSye1ZL0QOC4UMmaLZM23Bo%3D";
 
@@ -35,7 +35,7 @@ export function LoginForm() {
   return (
     <Card className="w-full max-w-sm shadow-xl bg-card border-border/50"> {/* Use card bg from theme */}
       <CardHeader className="text-center items-center">
-        <Image src={LOGO} alt="C3L1KD GPT Logo" width={40} height={40} className="rounded-sm mb-3" data-ai-hint="app logo"/>
+        <Image src={logo} alt="C3L1KD GPT Logo" width={40} height={40} className="rounded-sm mb-3" data-ai-hint="app logo"/>
         <CardTitle className="text-2xl font-semibold text-foreground">C3L1KD GPT</CardTitle>
         <CardDescription className="text-muted-foreground text-sm pt-1">
           Sign in to explore AI simulation.
