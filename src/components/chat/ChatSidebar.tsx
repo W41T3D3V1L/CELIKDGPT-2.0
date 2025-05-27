@@ -36,8 +36,8 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useState } from 'react';
 import { RenameChatDialog } from './RenameChatDialog';
 import { DEFAULT_INITIAL_USER_MESSAGE } from '@/contexts/ChatContext';
-
-const NEW_LOGO_URL = "https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac";
+import logo from '@/assets/logo.png'; // Assuming you have a logo in your assets
+// const NEW_LOGO_URL = "https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac";
 
 interface ChatSidebarProps {
   isCollapsed?: boolean;
@@ -141,7 +141,7 @@ export function ChatSidebar({ isCollapsed = false }: ChatSidebarProps) {
   return (
     <div className="h-full w-full flex flex-col text-sidebar-foreground p-2 space-y-2">
       <div className={cn("flex items-center gap-2 px-1.5 pt-1 pb-3 border-b border-sidebar-border", isCollapsed && "justify-center")}>
-        <Image src={NEW_LOGO_URL} alt="C3L1KD GPT Logo" width={isCollapsed ? 28 : 24} height={isCollapsed ? 28 : 24} className="rounded-sm flex-shrink-0" data-ai-hint="app logo"/>
+        <Image src={logo} alt="C3L1KD GPT Logo" width={isCollapsed ? 28 : 24} height={isCollapsed ? 28 : 24} className="rounded-sm flex-shrink-0" data-ai-hint="app logo"/>
         {!isCollapsed && <h2 className="text-base font-semibold text-foreground truncate">C3L1KD GPT</h2>}
       </div>
 
