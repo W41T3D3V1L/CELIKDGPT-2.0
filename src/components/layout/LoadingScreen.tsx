@@ -3,8 +3,8 @@
 
 import Image from 'next/image';
 import { Loader2 } from 'lucide-react';
-
-const LOGO_URL = "https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac";
+import logo from '@/assets/logo.png'; // Assuming you have a logo in your assets
+// const LOGO_URL = "https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac";
 
 interface LoadingScreenProps {
   message?: string;
@@ -16,7 +16,7 @@ export function LoadingScreen({ message = "Loading...", fullPage = true }: Loadi
     <div className={`flex flex-col items-center justify-center p-6 bg-background ${fullPage ? 'min-h-screen' : 'flex-1 h-full'}`}>
       <div className="flex flex-col items-center space-y-6">
         <Image
-          src={LOGO_URL}
+          src={logo}
           alt="C3L1KD GPT Logo"
           width={64}
           height={64}
