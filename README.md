@@ -4,7 +4,9 @@
 *Empower Your Ideas with Seamless AI Conversations*
 
 <p align="center">
-  <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-4864-622f-9b61-363bd6aa19f2/raw?se=2025-05-27T23%3A01%3A00Z&sp=r&sv=2024-08-04&sr=b&scid=29ff10cf-011f-5109-b41f-34e6105cee69&skoid=02b7f7b5-29f8-416a-aeb6-99464748559d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-27T21%3A53%3A23Z&ske=2025-05-28T21%3A53%3A23Z&sks=b&skv=2024-08-04&sig=kWamIS0%2BfKttQDhWYpmWN3JhbSQNO1oeeNV7S%2BHKqHc%3D" alt="CelikdGPT Logo" width="120"/>
+ 
+
+  <img src="https://github.com/user-attachments/assets/abdf8382-b8d4-4319-8af1-1880156a1dac" alt="CelikdGPT Logo" width="120"/>
 </p>
 
 <p align="center">
